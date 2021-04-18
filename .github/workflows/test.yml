@@ -8,7 +8,9 @@ jobs:
         uses: actions/checkout@v2
       - name: Run passing script
         run: |
+          run: chmod +x ./good.sh
           ./good.sh
       - name: Run failing script
         run: |
+          run: chmod +x ./bad.sh
           ./bad.sh
