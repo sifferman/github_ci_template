@@ -13,8 +13,5 @@ jobs:
       - name: Run passing script
         run: ./good.sh
 
-      # - name: Run failing script
-      #   run: ./bad.sh
-
-      - name: Remove test.rm
-        run: rm -f test.rm
+      - name: Run failing script
+        run: ./bad.sh
