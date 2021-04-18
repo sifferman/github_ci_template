@@ -1,11 +1,11 @@
 name: Test
 on: [push]
 jobs:
-  run-tests:
+  Run-Shell-Scripts:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v2
+      # - name: Check out repository code
+      #   uses: actions/checkout@v2
 
       - name: Set permissions
         run: chmod +x ./good.sh ./bad.sh
