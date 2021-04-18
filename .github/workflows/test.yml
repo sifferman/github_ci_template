@@ -6,12 +6,12 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - name: Initialize tests
-        run: |
-          chmod +x ./good.sh ./bad.sh
+
+      - name: Set permissions
+        run: chmod +x ./good.sh ./bad.sh
+
       - name: Run passing script
-        run: |
-           ./good.sh
+        run: ./good.sh
+
       - name: Run failing script
-        run: |
-          ./bad.sh
+        run: ./bad.sh
